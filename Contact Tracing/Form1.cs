@@ -21,7 +21,7 @@ namespace Contact_Tracing
         private void confirm_click(object sender, EventArgs e)
         {
             StreamWriter outputFile;
-            outputFile = File.AppendText(Environment.CurrentDirectory + "/Data/" + lastName_txtbox.Text + " " + firstName_txtbox.Text + ".txt");
+            outputFile = File.AppendText(lastName_txtbox.Text + " " + firstName_txtbox.Text + ".txt");
             outputFile.WriteLine(firstName_txtbox.Text);
             outputFile.WriteLine("First Name: " + firstName_txtbox.Text);
             outputFile.WriteLine("Last Name: " + lastName_txtbox.Text);

@@ -15,3 +15,4 @@ C:\Users\Amy\Documents\GitHub\Contact_Tracing\Contact Tracing\obj\Debug\net5.0-w
 C:\Users\Amy\Documents\GitHub\Contact_Tracing\Contact Tracing\obj\Debug\net5.0-windows\Contact Tracing.pdb
 C:\Users\Amy\Documents\GitHub\Contact_Tracing\Contact Tracing\obj\Debug\net5.0-windows\Contact Tracing.genruntimeconfig.cache
 C:\Users\Amy\Documents\GitHub\Contact_Tracing\Contact Tracing\obj\Debug\net5.0-windows\Contact_Tracing.main.resources
+C:\Users\Amy\Documents\GitHub\Contact_Tracing\Contact Tracing\obj\Debug\net5.0-windows\Contact Tracing.csprojAssemblyReference.cache
