@@ -41,11 +41,10 @@ namespace Contact_Tracing
             this.label5 = new System.Windows.Forms.Label();
             this.firstName_txtbox = new System.Windows.Forms.TextBox();
             this.firstName_label = new System.Windows.Forms.Label();
-            this.male_radiobtn = new System.Windows.Forms.RadioButton();
-            this.female_radiobtn = new System.Windows.Forms.RadioButton();
             this.sex_label = new System.Windows.Forms.Label();
             this.data_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.sex_txtbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lastName_txtbox
@@ -160,37 +159,15 @@ namespace Contact_Tracing
             this.firstName_label.TabIndex = 11;
             this.firstName_label.Text = "First Name ";
             // 
-            // male_radiobtn
-            // 
-            this.male_radiobtn.AutoSize = true;
-            this.male_radiobtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.male_radiobtn.Location = new System.Drawing.Point(223, 89);
-            this.male_radiobtn.Name = "male_radiobtn";
-            this.male_radiobtn.Size = new System.Drawing.Size(35, 24);
-            this.male_radiobtn.TabIndex = 12;
-            this.male_radiobtn.Text = "M";
-            this.male_radiobtn.UseVisualStyleBackColor = true;
-            // 
-            // female_radiobtn
-            // 
-            this.female_radiobtn.AutoSize = true;
-            this.female_radiobtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.female_radiobtn.Location = new System.Drawing.Point(265, 90);
-            this.female_radiobtn.Name = "female_radiobtn";
-            this.female_radiobtn.Size = new System.Drawing.Size(32, 24);
-            this.female_radiobtn.TabIndex = 13;
-            this.female_radiobtn.Text = "F";
-            this.female_radiobtn.UseVisualStyleBackColor = true;
-            // 
             // sex_label
             // 
             this.sex_label.AutoSize = true;
             this.sex_label.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sex_label.Location = new System.Drawing.Point(209, 66);
             this.sex_label.Name = "sex_label";
-            this.sex_label.Size = new System.Drawing.Size(65, 20);
+            this.sex_label.Size = new System.Drawing.Size(29, 20);
             this.sex_label.TabIndex = 14;
-            this.sex_label.Text = "First Name ";
+            this.sex_label.Text = "Sex";
             // 
             // data_btn
             // 
@@ -202,6 +179,7 @@ namespace Contact_Tracing
             this.data_btn.TabStop = false;
             this.data_btn.Text = "Open";
             this.data_btn.UseVisualStyleBackColor = true;
+            this.data_btn.Click += new System.EventHandler(this.data_btn_Click);
             // 
             // label1
             // 
@@ -213,16 +191,23 @@ namespace Contact_Tracing
             this.label1.TabIndex = 16;
             this.label1.Text = "Data File";
             // 
+            // sex_txtbox
+            // 
+            this.sex_txtbox.Location = new System.Drawing.Point(209, 89);
+            this.sex_txtbox.Name = "sex_txtbox";
+            this.sex_txtbox.Size = new System.Drawing.Size(110, 23);
+            this.sex_txtbox.TabIndex = 17;
+            this.sex_txtbox.TabStop = false;
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(330, 353);
+            this.Controls.Add(this.sex_txtbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.data_btn);
             this.Controls.Add(this.sex_label);
-            this.Controls.Add(this.female_radiobtn);
-            this.Controls.Add(this.male_radiobtn);
             this.Controls.Add(this.firstName_label);
             this.Controls.Add(this.firstName_txtbox);
             this.Controls.Add(this.label5);
@@ -256,11 +241,10 @@ namespace Contact_Tracing
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox firstName_txtbox;
         private System.Windows.Forms.Label firstName_label;
-        private System.Windows.Forms.RadioButton male_radiobtn;
-        private System.Windows.Forms.RadioButton female_radiobtn;
         private System.Windows.Forms.Label sex_label;
         private System.Windows.Forms.Button data_btn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox sex_txtbox;
     }
 }
 
